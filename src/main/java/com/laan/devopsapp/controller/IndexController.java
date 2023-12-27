@@ -18,7 +18,7 @@ import java.util.Map;
 public class IndexController {
 
     @GetMapping
-    public ResponseEntity<Object> getDepartment() {
+    public ResponseEntity<Object> init() {
         log.info("initializing app");
         Map<String, Object> map = Collections.singletonMap("message", "Success");
         return new ResponseEntity<>(map, HttpStatus.OK);
